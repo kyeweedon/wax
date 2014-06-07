@@ -1,0 +1,16 @@
+{
+
+	"name":"wax",
+	"version":"0.0.1",
+	"description":"Simple server management",
+	"author":"Kye <mail@kye.io>",
+
+	"private":true,
+	"repository":{
+
+		"type":"git",
+		"url":"//bitbucket.org/kyeweedon/wax"
+
+	}
+
+}
