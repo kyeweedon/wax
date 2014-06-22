@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+function tester {
+
+	echo "$BASH_SUBSHELL ($SHLVL) says: $1"
+
+}
+
+tester "1 start"
+(
+
+	function tester2 {
+
+		echo "tester2"
+
+	}
+	tester2
+	tester "2 start"
+	(
+
+		tester "3 start"
+		sleep 0.5
+		tester "3 finish"
+		exit 1
+
+	)
+	echo "$?"
+	tester "2 finish"
+	exit 0
+
+)
+echo "$?"
+tester "1 finish"
