@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# kye
+# 2014.06.03
+# 2014.06.22
+
+# vars {
+src="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/src"
+# }
+
+# initial test {
+source $src/ensure/notRoot
+source $src/ensure/notSubshell
+# }
+
+# start {
+echo "alias wax=\". $(cd "$src/.." && pwd)/wax\"" >> $HOME/.bashrc
+printf "\n$(tput smul;tput setaf 2)\xF0\x9F\x91\x8D  wax installed!$(tput sgr0)\n\n"
+# }
+
+# finish {
+unset -v src
+source $HOME/.bashrc
+# }

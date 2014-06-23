@@ -1,0 +1,7 @@
+if [[ $EUID == 0 ]]; then
+
+	printf "\n$(tput smul;tput setaf 3)\xE2\x9C\x8B  wax doesn't like running as root!$(tput sgr0)\n"
+	printf "   please try again without \"sudo\"\n\n"
+	exit 1
+
+fi

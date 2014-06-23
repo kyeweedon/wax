@@ -1,0 +1,24 @@
+
+# kye
+# 2014.06.20
+# 2014.06.23
+
+hostname="kye.loc"
+timezone="Australia/Sydney"
+
+# modules to install {
+declare -a installme=(nginx git mysql nvm)
+# }
+
+function profile {
+
+	# return string to add to profile (.bashrc)
+
+	local myProfile=""
+
+	# add alises
+	myProfile="$myProfile$(curl -s https://raw.githubusercontent.com/kyeweedon/preferences/master/bash/aliases.sh)"
+
+	echo "$myProfile"
+
+}

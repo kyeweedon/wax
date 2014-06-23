@@ -1,0 +1,7 @@
+if [[ ! -f "$modules/$2/instructions.sh" ]]; then
+
+	log stop "module \"$2\" doesn't have an instrucions file"
+	log info "needs \"$2/instructions.sh\""
+	return 1
+
+fi

@@ -1,0 +1,7 @@
+if [[ -z "$1" ]]; then
+
+	log stop "wax needs an instruction"
+	log info "example: \"wax install\""
+	return 1
+
+fi

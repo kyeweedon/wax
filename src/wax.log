@@ -1,0 +1,78 @@
+2014.06.23 17:42:50 - wax install aim.003
+   wait - installing aim.003 source
+   good - aim.003 sourced by vagrant
+   wait - configuring nginx
+   good - nginx configured
+   wait - restarting nginx
+nginx: [emerg] invalid number of arguments in "include" directive in /etc/nginx/conf.d/aim.003.conf:16
+nginx: configuration file /etc/nginx/nginx.conf test failed
+   good - nginx restarted
+2014.06.23 17:42:50 - end
+
+2014.06.23 17:43:37 - wax install aim.003
+   wait - installing aim.003 source
+   good - aim.003 sourced by vagrant
+   wait - configuring nginx
+   good - nginx configured
+   wait - restarting nginx
+Stopping nginx: [60G[[0;32m  OK  [0;39m]
+Starting nginx: [60G[[0;32m  OK  [0;39m]
+   good - nginx restarted
+2014.06.23 17:43:38 - end
+
+2014.06.23 17:44:01 - wax start aim.003
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+   good - aim.003 stopped
+2014.06.23 17:47:25 - end
+
+2014.06.23 17:51:50 - wax install nodeon
+   stop - wax can't find module "nodeon"
+   info - ensure it exists & try again
+2014.06.23 17:51:50 - end
+
+2014.06.23 17:51:58 - wax install nodemon
+   wait - installing nodemon
+/home/vagrant/.nvm/v0.10.29/bin/nodemon -> /home/vagrant/.nvm/v0.10.29/lib/node_modules/nodemon/bin/nodemon.js
+nodemon@1.2.0 /home/vagrant/.nvm/v0.10.29/lib/node_modules/nodemon
+├── minimatch@0.3.0 (sigmund@1.0.0, lru-cache@2.5.0)
+├── ps-tree@0.0.3 (event-stream@0.5.3)
+└── update-notifier@0.1.10 (semver@2.3.1, chalk@0.4.0, configstore@0.3.1, request@2.36.0)
+   good - nodemon installed
+2014.06.23 17:52:19 - end
+
+2014.06.23 17:54:11 - wax start aim.003
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+   good - aim.003 stopped
+2014.06.23 17:54:20 - end
+
+2014.06.23 17:54:24 - wax start aim.003 n
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+   good - aim.003 stopped
+2014.06.23 17:54:30 - end
+
+2014.06.23 17:54:34 - wax start aim.003 nodemon
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...

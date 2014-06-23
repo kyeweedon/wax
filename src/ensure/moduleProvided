@@ -1,0 +1,7 @@
+if [[ -z "$2" ]]; then
+
+	log stop "wax needs to know which module to $1"
+	log info "example: \"wax $1 foo\""
+	return 1
+
+fi

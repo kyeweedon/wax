@@ -1,0 +1,7 @@
+if [[ ! -d "$modules/$2" ]]; then
+
+	log stop "wax can't find module \"$2\""
+	log info "ensure it exists & try again"
+	return 1
+
+fi

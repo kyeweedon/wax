@@ -1,0 +1,56 @@
+source ${src}/styles
+source ${src}/icons
+
+function log {
+
+	printf "   ${1} - ${2}\n" >> ${logfile}
+
+	case ${1} in
+
+		title)
+
+			printf "   ${sul}${sfc}${iwait} ${2}...${srs}${scl}\n"
+
+		;;
+
+		wait)
+
+			printf "   ${sfc}${iwait} ${2}...${srs}${scl}"
+			#sleep 0.5
+
+		;;
+
+		update)
+
+			printf "\r   ${sfc}${iwait} ${2}...${srs}${scl}"
+			#sleep 0.5
+
+		;;
+
+		stop)
+
+			printf "\r   ${sfy}${istop} ${2}${srs}${scl}\n"
+
+		;;
+
+		good)
+
+			printf "\r   ${sfg}${igood} ${2}${srs}${scl}\n"
+
+		;;
+
+		fail)
+
+			printf "\r   ${sfr}${ifail} ${2}${srs}${scl}\n"
+
+		;;
+
+		info)
+
+			printf "   ${istep} ${2}\n"
+
+		;;
+
+	esac
+
+}

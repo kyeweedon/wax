@@ -1,89 +1,88 @@
 
 # kye
 # 2014.06.20
-# 2014.06.21
+# 2014.06.23
+
+function update {
+
+	log wait "updating server packages"
+	sudo yum check-update >> ${logfile} 2>&1
+	if ! [[ "${?}" == 0 ]]; then
+
+		sudo yum update -y >> ${logfile} 2>&1
+
+	fi
+	log good "server packages up to date"
+
+}
 
 function build {
 
-	# args
-	# $1 instruction
-	# $2 module
-	# $3 path to waxfile (opt)
-	# echo "$*"
+	# ${1} path to waxfile (opt)
 
-	local waxfile=$modules/$2/waxfile
+	local waxfile="${me}/waxfile"
 
 	# locate waxfile {
-	if [ "$3" ]; then
-
-		waxfile=$3
-
-	fi
+	test "${1}" &&	waxfile="${1}"
 	# }
 
-	# ensure waxfile exists {
-	if [[ ! -f $waxfile ]]; then
+	# waxfile {
+	if [[ ! -f ${waxfile} ]]; then
 
-		log "stop" "waxfile not found"
-		log "info" "option 1. place waxfile at \".wax/modules/$2/waxfile\""
-		log "info" "option 2. use \"wax $1 $2 <path/to/waxfile>\""
+		log stop "waxfile not found"
+		log info "option 1. place waxfile at \"${me}/waxfile\""
+		log info "option 2. use \"wax build server <path/to/waxfile>\""
 		return 1
 
 	fi
-	# }
-
-	# source waxfile {
-	source $waxfile
+	source ${waxfile}
 	# }
 
 	# set hostname {
 	log wait "setting hostname"
-	sudo hostname $hostname
-	log good "hostname set to $hostname"
+	sudo hostname ${hostname}
+	log good "hostname set to ${HOSTNAME}"
 	# }
 
-	# update server {
-	log wait "updating server packages"
-	sudo yum check-update >&/dev/null
-	if ! [ "$?" = 0 ]; then
-
-		sudo yum update -y &>$logs/wax.log
-
-	fi
-	log good "server packages up to date"
+	# update packages {
+	action update server
 	# }
 
 	# set timezone {
 	log wait "setting timezone"
-	if [ ! -f "/usr/share/zoneinfo/$timezone" ]; then
+	if [[ ! -f "/usr/share/zoneinfo/${timezone}" ]]; then
 
-		log fail "can't set timezone \"$timezone\""
+		log fail "can't set timezone \"${timezone}\""
 
 	else
 
-		if ! ls -l /etc/localtime | grep -q $timezone -; then
+		if ! ls -l /etc/localtime | grep -q ${timezone} -; then
 
-			sudo ln -sf /usr/share/zoneinfo/$timezone /etc/localtime
+			sudo ln -sf /usr/share/zoneinfo/${timezone} /etc/localtime
 
 		fi
-		log good "timezone set to \"$timezone\""
+		log good "timezone set to \"${timezone}\""
 
 	fi
 	# }
 
-	# alias ls {
-	log wait "creating alias commands"
-	if ! grep -q "alias ls=" $HOME/.bashrc; then
+	# update profile {
+	log wait "updating profile"
+	if ! grep -q "# wax {" ${HOME}/.bashrc; then
 
-		echo "alias ls=\"ls -l --color\"" >> $HOME/.bashrc
-
-	fi
-	if ! grep -q "alias lsa=" $HOME/.bashrc; then
-
-		echo "alias lsa=\"ls -a\"" >> $HOME/.bashrc
+		log update "injecting profile"
+		echo "$(printf "# wax {\n")$(profile)$(printf "\n# wax }\n")" >> ${HOME}/.bashrc
 
 	fi
-	log good "alias commands created (may require relog)"
+	log good "profile updated"
+	# }
+
+	# install modules {
+	for mod in "${installme[@]}"; do
+
+		wax install ${mod}
+
+	done
 	# }
 
 }

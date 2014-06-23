@@ -1,0 +1,7 @@
+if [[ $(type -t $1) != "function" ]]; then
+
+	log stop "module \"$2\" doesn't know how to \"$1\""
+	log info "try something else"
+	return 1
+
+fi
