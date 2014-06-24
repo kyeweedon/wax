@@ -76,3 +76,350 @@ default -> 0.10.29 (-> v0.10.29)
 Now using node v0.10.29
    good - now using node 0.10.29
    info - starting aim.003...
+   good - aim.003 stopped
+2014.06.23 18:00:51 - end
+
+2014.06.23 18:00:52 - wax start aim.003 nodemon
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+   good - aim.003 stopped
+2014.06.23 18:02:13 - end
+
+2014.06.23 18:06:57 - wax install pm2
+   wait - installing pm2
+npm WARN optional dep failed, continuing fsevents@0.2.0
+/home/vagrant/.nvm/v0.10.29/bin/pm2 -> /home/vagrant/.nvm/v0.10.29/lib/node_modules/pm2/bin/pm2
+pm2@0.8.15 /home/vagrant/.nvm/v0.10.29/lib/node_modules/pm2
+├── json-stringify-safe@5.0.0
+├── commander@2.2.0
+├── eventemitter2@0.4.13
+├── pm2-interface@0.1.3
+├── colors@0.6.2
+├── pidusage@0.0.4
+├── cron@1.0.1
+├── cli-table@0.3.0
+├── async@0.7.0
+├── nssocket@0.5.1 (lazy@1.0.11)
+├── debug@1.0.2 (ms@0.6.2)
+├── pm2-multimeter@0.1.2 (charm@0.1.2)
+├── coffee-script@1.7.0 (mkdirp@0.3.5)
+├── pm2-axon-rpc@0.0.2 (commander@1.0.5)
+├── chokidar@0.8.2 (recursive-readdir@0.0.2)
+└── axon@1.0.0 (escape-regexp@0.0.1, configurable@0.0.1)
+   good - pm2 installed
+2014.06.23 18:07:10 - end
+
+2014.06.23 18:08:56 - wax start aim.003 pm2
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+   good - aim.003 stopped
+2014.06.23 18:09:00 - end
+
+2014.06.23 18:09:42 - wax start aim.003 pm2
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+   good - aim.003 stopped
+2014.06.23 18:09:45 - end
+
+2014.06.23 18:10:49 - wax start aim.003 pm2
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[32mPM2 [39mProcess successfully started
+[37m┌──────────┬────┬─────────┬───────┬────────┬───────────┬────────┬─────────────┬───────────┐[39m
+[37m│[39m[1m[36m App name [39m[22m[37m│[39m[1m[36m id [39m[22m[37m│[39m[1m[36m mode    [39m[22m[37m│[39m[1m[36m PID   [39m[22m[37m│[39m[1m[36m status [39m[22m[37m│[39m[1m[36m restarted [39m[22m[37m│[39m[1m[36m uptime [39m[22m[37m│[39m[1m[36m      memory [39m[22m[37m│[39m[1m[36m  watching [39m[22m[37m│[39m
+[37m├──────────┼────┼─────────┼───────┼────────┼───────────┼────────┼─────────────┼───────────┤[39m
+[37m│[39m[1m[36m [1mserver[22m   [39m[22m[37m│[39m 0  [37m│[39m [1m[34mcluster[39m[22m [37m│[39m 16558 [37m│[39m [1m[32monline[39m[22m [37m│[39m         0 [37m│[39m 0s     [37m│[39m 18.250 MB   [37m│[39m [1m[32mactivated[39m[22m [37m│[39m
+[37m└──────────┴────┴─────────┴───────┴────────┴───────────┴────────┴─────────────┴───────────┘[39m
+ Use `pm2 desc[ribe] <id>` to get more details
+   good - aim.003 stopped
+2014.06.24 08:49:17 - end
+
+2014.06.24 08:49:23 - wax start aim.003 pm2 --watch
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[31mPM2 [ERROR] [39mScript already launched, add -f option to force re execution
+   good - aim.003 stopped
+2014.06.24 08:59:46 - end
+
+2014.06.24 10:06:03 - wax start aim.003 pm2 --watch
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[31mPM2 [ERROR] [39mScript already launched, add -f option to force re execution
+   good - aim.003 stopped
+2014.06.24 11:45:25 - end
+
+2014.06.24 11:45:37 - wax install aim
+   stop - wax can't find module "aim"
+   info - ensure it exists & try again
+2014.06.24 11:45:37 - end
+
+2014.06.24 11:45:41 - wax install aim.00
+   stop - wax can't find module "aim.00"
+   info - ensure it exists & try again
+2014.06.24 11:45:41 - end
+
+2014.06.24 11:56:38 - wax install aim.003
+   wait - installing aim.003 source
+   good - aim.003 sourced by vagrant
+   wait - configuring nginx
+   good - nginx configured
+   wait - building database
+   good - database built
+   wait - restarting nginx
+Stopping nginx: [60G[[0;32m  OK  [0;39m]
+Starting nginx: [60G[[0;32m  OK  [0;39m]
+   good - nginx restarted
+2014.06.24 11:56:49 - end
+
+2014.06.24 11:58:35 - wax install aim.003
+   wait - installing aim.003 source
+   good - aim.003 sourced by vagrant
+   wait - configuring nginx
+   good - nginx configured
+   wait - building database
+   good - database built
+   wait - restarting nginx
+Stopping nginx: [60G[[0;32m  OK  [0;39m]
+Starting nginx: [60G[[0;32m  OK  [0;39m]
+   good - nginx restarted
+2014.06.24 11:58:42 - end
+
+2014.06.24 12:00:11 - wax install aim.003
+   wait - installing aim.003 source
+   good - aim.003 sourced by vagrant
+   wait - configuring nginx
+   good - nginx configured
+   wait - building database
+   good - database built
+   wait - restarting nginx
+Stopping nginx: [60G[[0;32m  OK  [0;39m]
+Starting nginx: [60G[[0;32m  OK  [0;39m]
+   good - nginx restarted
+2014.06.24 12:00:19 - end
+
+2014.06.24 12:11:59 - wax install aim.003
+   wait - installing aim.003 source
+   good - aim.003 sourced by vagrant
+   wait - configuring nginx
+   good - nginx configured
+   wait - building database
+   good - database built
+   wait - restarting nginx
+Stopping nginx: [60G[[0;32m  OK  [0;39m]
+Starting nginx: [60G[[0;32m  OK  [0;39m]
+   good - nginx restarted
+2014.06.24 12:12:06 - end
+
+2014.06.24 12:12:57 - wax start aim.003 pm2 --watch
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[31mPM2 [ERROR] [39mScript already launched, add -f option to force re execution
+   good - aim.003 stopped
+2014.06.24 12:57:08 - end
+
+2014.06.24 12:59:56 - wax install aim.003
+   wait - installing aim.003 source
+   good - aim.003 sourced by vagrant
+   wait - configuring nginx
+   good - nginx configured
+   wait - building database
+   good - database built
+   wait - restarting nginx
+Stopping nginx: [60G[[0;32m  OK  [0;39m]
+Starting nginx: [60G[[0;32m  OK  [0;39m]
+   good - nginx restarted
+2014.06.24 13:00:04 - end
+
+2014.06.24 13:32:17 - wax start aim.003 pm2 --watch
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[31mPM2 [ERROR] [39mScript already launched, add -f option to force re execution
+   good - aim.003 stopped
+2014.06.24 14:22:32 - end
+
+2014.06.24 14:22:33 - wax start aim.003 pm2 --watch
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[31mPM2 [ERROR] [39mScript already launched, add -f option to force re execution
+   good - aim.003 stopped
+2014.06.24 14:22:42 - end
+
+2014.06.24 14:23:02 - wax start aim.003 pm2 --watch
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[31mPM2 [ERROR] [39mScript already launched, add -f option to force re execution
+   good - aim.003 stopped
+2014.06.24 14:25:06 - end
+
+2014.06.24 14:25:28 - wax start aim.003 pm2 --watch ../
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+   good - aim.003 stopped
+2014.06.24 14:26:12 - end
+
+2014.06.24 14:26:19 - wax start aim.003 pm2 --watch=../
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+   good - aim.003 stopped
+2014.06.24 14:26:27 - end
+
+2014.06.24 14:26:32 - wax start aim.003 pm2 --watch=../
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+   good - aim.003 stopped
+2014.06.24 14:26:40 - end
+
+2014.06.24 14:26:55 - wax start aim.003 pm2 --watch=/srv/aim/003/
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[32mPM2 [39mProcess launched
+[37m┌──────────┬────┬─────────┬───────┬────────┬───────────┬────────┬─────────────┬───────────┐[39m
+[37m│[39m[1m[36m App name [39m[22m[37m│[39m[1m[36m id [39m[22m[37m│[39m[1m[36m mode    [39m[22m[37m│[39m[1m[36m PID   [39m[22m[37m│[39m[1m[36m status [39m[22m[37m│[39m[1m[36m restarted [39m[22m[37m│[39m[1m[36m uptime [39m[22m[37m│[39m[1m[36m      memory [39m[22m[37m│[39m[1m[36m  watching [39m[22m[37m│[39m
+[37m├──────────┼────┼─────────┼───────┼────────┼───────────┼────────┼─────────────┼───────────┤[39m
+[37m│[39m[1m[36m [1m003[22m      [39m[22m[37m│[39m 0  [37m│[39m [1m[34mcluster[39m[22m [37m│[39m 20933 [37m│[39m [1m[32monline[39m[22m [37m│[39m         0 [37m│[39m 0s     [37m│[39m 17.402 MB   [37m│[39m [1m[32mactivated[39m[22m [37m│[39m
+[37m└──────────┴────┴─────────┴───────┴────────┴───────────┴────────┴─────────────┴───────────┘[39m
+ Use `pm2 desc[ribe] <id>` to get more details
+   good - aim.003 stopped
+2014.06.24 14:27:12 - end
+
+2014.06.24 14:27:38 - wax start aim.003 pm2 --watch=/srv/aim/003/
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[32mPM2 [39mProcess launched
+[37m┌──────────┬────┬─────────┬───────┬─────────┬───────────┬────────┬─────────────┬───────────┐[39m
+[37m│[39m[1m[36m App name [39m[22m[37m│[39m[1m[36m id [39m[22m[37m│[39m[1m[36m mode    [39m[22m[37m│[39m[1m[36m PID   [39m[22m[37m│[39m[1m[36m status  [39m[22m[37m│[39m[1m[36m restarted [39m[22m[37m│[39m[1m[36m uptime [39m[22m[37m│[39m[1m[36m      memory [39m[22m[37m│[39m[1m[36m  watching [39m[22m[37m│[39m
+[37m├──────────┼────┼─────────┼───────┼─────────┼───────────┼────────┼─────────────┼───────────┤[39m
+[37m│[39m[1m[36m [1m003[22m      [39m[22m[37m│[39m 0  [37m│[39m [1m[34mcluster[39m[22m [37m│[39m 21026 [37m│[39m [31m[1merrored[22m[39m [37m│[39m        15 [37m│[39m 0      [37m│[39m      0 B    [37m│[39m [1m[32mactivated[39m[22m [37m│[39m
+[37m│[39m[1m[36m [1mserver[22m   [39m[22m[37m│[39m 1  [37m│[39m [1m[34mcluster[39m[22m [37m│[39m 21278 [37m│[39m [1m[32monline[39m[22m  [37m│[39m         0 [37m│[39m 0s     [37m│[39m 17.836 MB   [37m│[39m [1m[32mactivated[39m[22m [37m│[39m
+[37m└──────────┴────┴─────────┴───────┴─────────┴───────────┴────────┴─────────────┴───────────┘[39m
+ Use `pm2 desc[ribe] <id>` to get more details
+   good - aim.003 stopped
+2014.06.24 14:29:03 - end
+
+2014.06.24 14:29:11 - wax start aim.003 pm2 --watch
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[31mPM2 [ERROR] [39mScript already launched, add -f option to force re execution
+   good - aim.003 stopped
+2014.06.24 14:41:19 - end
+
+2014.06.24 14:41:21 - wax start aim.003 pm2 --watch
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[31mPM2 [ERROR] [39mScript already launched, add -f option to force re execution
+   good - aim.003 stopped
+2014.06.24 15:44:46 - end
+
+2014.06.24 15:44:48 - wax start aim.003 pm2 --watch
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+{ online: true, success: true, pid: 4820, pm2_version: '0.8.15' }
+[32mPM2 [39mProcess launched
+[37m┌──────────┬────┬─────────┬──────┬────────┬───────────┬────────┬─────────────┬───────────┐[39m
+[37m│[39m[1m[36m App name [39m[22m[37m│[39m[1m[36m id [39m[22m[37m│[39m[1m[36m mode    [39m[22m[37m│[39m[1m[36m PID  [39m[22m[37m│[39m[1m[36m status [39m[22m[37m│[39m[1m[36m restarted [39m[22m[37m│[39m[1m[36m uptime [39m[22m[37m│[39m[1m[36m      memory [39m[22m[37m│[39m[1m[36m  watching [39m[22m[37m│[39m
+[37m├──────────┼────┼─────────┼──────┼────────┼───────────┼────────┼─────────────┼───────────┤[39m
+[37m│[39m[1m[36m [1mserver[22m   [39m[22m[37m│[39m 0  [37m│[39m [1m[34mcluster[39m[22m [37m│[39m 4826 [37m│[39m [1m[32monline[39m[22m [37m│[39m         0 [37m│[39m 0s     [37m│[39m 18.164 MB   [37m│[39m [1m[32mactivated[39m[22m [37m│[39m
+[37m└──────────┴────┴─────────┴──────┴────────┴───────────┴────────┴─────────────┴───────────┘[39m
+ Use `pm2 desc[ribe] <id>` to get more details
+   good - aim.003 stopped
+2014.06.24 16:01:37 - end
+
+2014.06.24 16:01:37 - wax start aim.003 pm2 --watch
+   wait - switching to node 0.10.29
+v0.10.29 is already installed.
+Now using node v0.10.29
+default -> 0.10.29 (-> v0.10.29)
+Now using node v0.10.29
+   good - now using node 0.10.29
+   info - starting aim.003...
+[31mPM2 [ERROR] [39mScript already launched, add -f option to force re execution

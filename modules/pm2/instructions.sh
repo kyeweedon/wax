@@ -5,7 +5,7 @@
 
 function install {
 
-	log wait "installing nodemon"
+	log wait "installing pm2"
 	if ! hash npm 2>/dev/null; then
 
 		log fail "\"npm\" not found"
@@ -13,8 +13,8 @@ function install {
 
 	fi
 
-	npm install -g nodemon >> ${logfile} 2>&1
-	log good "nodemon installed"
+	npm install -g pm2@latest >> ${logfile} 2>&1
+	log good "pm2 installed"
 
 }
 

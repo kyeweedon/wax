@@ -5,6 +5,7 @@
 
 function install {
 
+	# build source {
 	log wait "installing aim.003 source"
 	if [[ "${HOSTNAME}" == "kye.loc" ]]; then
 
@@ -12,13 +13,34 @@ function install {
 
 	else
 
-		log good "aim.003 source installed"
+		log todo "install source from git"
 
 	fi
+	# }
 
+	# configure nginx {
 	log wait "configuring nginx"
 	sudo cp -f ${me}/src/nginx.${HOSTNAME: -3}.conf /etc/nginx/conf.d/aim.003.conf
 	log good "nginx configured"
+	# }
+
+	log wait "building database"
+
+	# ensure mysql {
+	if ! hash mysql 2>/dev/null; then
+
+		log fail "aim.003 needs mysql"
+		return 1
+
+	fi
+	# }
+
+	# build it {
+	mysql -u root -p < ${me}/src/build.sql
+	# }
+
+	log good "database built"
+	# }
 
 	wax restart nginx
 
@@ -41,22 +63,24 @@ function update {
 
 function start {
 
-	# ${1} environment
+	# ${1} using (default: node)
+	# ${2} flags
 
 	wax use node 0.10.29
 	log info "starting aim.003..."
 
 	case ${1} in
 
-		nodemon)
+		pm2)
 
-			nodemon /srv/aim/003/mech/server.js
+			pm2 start /srv/aim/003/mech/server.js ${@:2} >> ${logfile} 2>&1
+			pm2 logs server
 
 		;;
 
 		*)
 
-			node /srv/aim/003/mech/server.js
+			node ${@:2} /srv/aim/003/mech/server.js
 
 		;;
 

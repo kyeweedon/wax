@@ -3,6 +3,9 @@ source ${src}/icons
 
 function log {
 
+	# ${1} message type
+	# ${2} message text
+
 	printf "   ${1} - ${2}\n" >> ${logfile}
 
 	case ${1} in
@@ -48,6 +51,12 @@ function log {
 		info)
 
 			printf "   ${istep} ${2}\n"
+
+		;;
+
+		todo)
+
+			printf "   ${sfy}${itodo} ${2}${srs}${scl}\n"
 
 		;;
 
